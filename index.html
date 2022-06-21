@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/assets/fintech.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./style/color_primary.css">
+  <link rel="stylesheet" href="./style/color_secondary.css">
+  <link rel="stylesheet" href="style/login.css">
+  <title>Fintech - Te ajudando a realizar suas metas financeiras</title>
+</head>
+
+<body>
+  <main>
+
+    <div id="background" class="background">
+      <div class="background__up"> </div>
+      <div class="background__down"> </div>
+      <svg class="background__wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#fff" fill-opacity="1"
+          d="M0,64L80,58.7C160,53,320,43,480,74.7C640,107,800,181,960,202.7C1120,224,1280,192,1360,176L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+        </path>
+      </svg>
+      <div class="background_img"> </div>
+    </div>
+
+    <div id="card" class="card shadow login">
+      <div class="card-body p-4 ">
+        <img src="assets/ft_logo_hor.svg" alt="Logo Fintech" class="mx-auto pt-4 d-block">
+        <div class="card-body d-grid gap-2">
+          <p class="card-title text-center fs-3 text-muted">
+            Te ajudando a realizar suas metas financeiras
+          </p>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="nome@email.com.br">
+          </div>
+          <label for="pass">Senha</label>
+          <div class="input-group">
+            <input type="password" class="form-control" id="pass"></input>
+            <span class="input-group-text" type="button">
+              <i class="bi bi-eye"></i>
+            </span>
+          </div>
+          <div class="form-text text-end mb-4">
+            <a href="#" class="text-primary text-decoration-none">Esqueci minha senha</a>
+          </div>
+          <a href="./dashboard.html" class="d-block btn btn-secondary btn-lg">Entrar</a>
+        </div>
+        <div class="text-center m-2">
+          <a href="#" class="text-primary text-decoration-none">Não tenho cadastro</a>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

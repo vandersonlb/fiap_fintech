@@ -1,0 +1,54 @@
+.background__up {
+  width: 100vw;
+  height: 60vh;
+  background: rgb(182, 176, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(182, 176, 255, 1) 0%,
+    rgba(230, 230, 255, 1) 100%
+  );
+}
+.background__down {
+  height: 40vh;
+}
+.background__wave {
+  position: absolute;
+  bottom: 50%;
+  transform: scaleX(-1) translateY(55%);
+}
+.background_img {
+  position: absolute;
+  right: 3%;
+  bottom: 5%;
+  width: 45vw;
+  height: 50vh;
+  background: url("../assets/bckgrnd_img_1.svg") no-repeat right bottom;
+  background-size: contain;
+}
+.card.login {
+  width: 28rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 768px) {
+  .card.login {
+    width: 90%;
+  }
+  .background__down,
+  .background__wave,
+  .background_img {
+    display: none;
+  }
+  .background__up {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .background_img {
+    background-image: url("../assets/bckgrnd_img_2.svg");
+  }
+}

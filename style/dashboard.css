@@ -1,0 +1,12 @@
+main {
+  background: url(assets/bckgrnd-dashboard.svg) no-repeat center bottom;
+}
+
+.card i {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+.card span {
+  line-height: normal;
+}

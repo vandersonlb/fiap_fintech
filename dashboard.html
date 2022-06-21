@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/assets/fintech.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./style/color_primary.css">
+  <link rel="stylesheet" href="./style/color_secondary.css">
+  <link rel="stylesheet" href="./style/dashboard.css">
+  <title>Fintech - Te ajudando a realizar suas metas financeiras</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg shadow-sm px-3 px-md-5">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./assets/ft_logo_hor.svg" alt="" width="150">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-grid-3x3-gap-fill text-secondary fs-2"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 align-items-end align-items-lg-center">
+            <li class="align-items-center d-flex dropdown nav-item mx-3">
+              <a class="nav-link dropdown-toggle text-primary fs-5" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Controle Financeiro
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end py-2" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item fs-5 py-2" href="#"><i class="bi bi-bar-chart me-3"></i>Extrato mensal</a>
+                </li>
+                <li><a class="dropdown-item fs-5 py-2" href="#"><i class="bi bi-bank me-3"></i>Contas bancárias</a></li>
+                <li><a class="dropdown-item fs-5 py-2" href="#"><i class="bi bi-calculator me-3"></i>Cálculo de gastos</a></li>
+              </ul>
+            </li>
+            <li class="align-items-center d-flex dropdown nav-item mx-3">
+              <a class="nav-link text-primary" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="bi bi-person-circle fs-3"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end py-2" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item fs-5 py-2" href="#"><i class="bi bi-person me-3"></i>Editar perfil</a></li>
+                <li><a class="dropdown-item fs-5 py-2" href="#"><i class="bi bi-gear me-3"></i>Configurações</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item fs-5 py-2" href="#"><i class="bi bi-box-arrow-right me-3"></i>Sair</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container-fluid pb-5">
+    <div class="container-lg position-relative">
+      <div class="row my-4 pt-5">
+        <div class="col align-self-center">
+          <h1 class="h2">Controle Financeiro</h1>
+        </div>
+        <div class="align-items-baseline align-self-center col d-flex justify-content-end">
+          <p class="d-inline me-3 fs-5 d-none d-sm-inline">Escolha o mês:</p>
+          <button type="button" class="btn btn-outline-primary fs-5 fw-bold px-5">Junho</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-6 px-3">
+          <h2 class="h4 p-3">Resumo do mês</h2>
+          <div class="card shadow p-4">
+            <div class="mb-4">
+              <span class="h6 mb-1 d-block">Renda</span>
+              <span class="h5 text-success">R$ 10.000,00</span>
+              <div class="progress mt-2">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="mb-4">
+              <span class="h6 mb-1 d-block">Gastos</span>
+              <span class="h5 text-primary">R$ 7.500,00</span>
+              <div class="progress mt-2">
+                <div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="75"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="mb-4">
+              <span class="h6 mb-1 d-block">Planejado</span>
+              <span class="h5 text-secondary">R$ 5.000,00</span>
+              <div class="progress mt-2">
+                <div class="progress-bar bg-secondary" role="progressbar" style="width: 50%" aria-valuenow="50"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 px-3 mb-5 pt-4 pt-lg-0">
+          <h2 class="h4 p-3">Extrato</h2>
+          <div class="card shadow p-4">
+            <div class="row my-3">
+              <div class="col d-flex">
+                <i class="bi bi-basket fs-3 border border-primary rounded-circle py-1 px-2 text-primary"></i>
+                <div class="d-flex flex-column ps-2">
+                  <span class="fs-6">Mercado</span>
+                  <span class="fs-5">Mercado Market</span>
+                </div>
+              </div>
+              <div class="col-12 col-sm-5 d-flex align-items-center justify-content-end">
+                <span class="h5">- R$ 200,00</span>
+              </div>
+            </div>
+            <div class="row my-3">
+              <div class="col d-flex">
+                <i class="bi bi-bag fs-3 border border-secondary rounded-circle py-1 px-2 text-secondary"></i>
+                <div class="d-flex flex-column ps-2">
+                  <span class="fs-6">Compras</span>
+                  <span class="fs-5">Shopping Center</span>
+                </div>
+              </div>
+              <div class="col-12 col-sm-5 d-flex align-items-center justify-content-end">
+                <span class="h5">- R$ 500,00</span>
+              </div>
+            </div>
+            <div class="row my-3">
+              <div class="col d-flex">
+                <i class="bi bi-currency-dollar fs-3 border border-success rounded-circle py-1 px-2 text-success"></i>
+                <div class="d-flex flex-column ps-2">
+                  <span class="fs-6">Remuneração</span>
+                  <span class="fs-5">Trabalho principal</span>
+                </div>
+              </div>
+              <div class="col-12 col-sm-5 d-flex align-items-center justify-content-end">
+                <span class="h5">R$ 5.000,00</span>
+              </div>
+            </div>
+            <div class="row my-3">
+              <div class="col d-flex">
+                <i class="bi bi-house-door fs-3 border border-info rounded-circle py-1 px-2 text-info"></i>
+                <div class="d-flex flex-column ps-2">
+                  <span class="fs-6">Moradia</span>
+                  <span class="fs-5">Aluguel janeiro</span>
+                </div>
+              </div>
+              <div class="col-12 col-sm-5 d-flex align-items-center justify-content-end">
+                <span class="h5">R$ 2.000,00</span>
+              </div>
+            </div>
+            <div class="row my-3">
+              <div class="col d-flex">
+                <i class="bi bi-dpad fs-3 border border-danger rounded-circle py-1 px-2 text-danger"></i>
+                <div class="d-flex flex-column ps-2">
+                  <span class="fs-6">Jogos</span>
+                  <span class="fs-5">Super Mario Bros.</span>
+                </div>
+              </div>
+              <div class="col-12 col-sm-5 d-flex align-items-center justify-content-end">
+                <span class="h5">R$ 35,00</span>
+              </div>
+            </div>
+            <div class="row my-2">
+              <div class="col">
+                <img src="assets/extrato.svg" height="100" alt="Ilustração extrato">
+              </div>
+              <div class="col">
+                <div class="d-grid gap-2 mt-2">
+                  <button class="btn btn-outline-primary" type="button">Ver extrato</button>
+                  <button class="btn btn-primary" type="button">Adicionar transação</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="position-fixed bottom-0 start-50 translate-middle-x">
+      <div class="row badge bg-secondary mb-4 p-2 p-sm-3 d-sm-flex">
+        <div class="col fs-5 fw-normal lh-sm">Saldo atual</div>
+        <div class="col fs-5 fw-bold lh-sm">R$ 1.500,00</div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
